@@ -4,22 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    /* Add a transition effect to the card */
+    .card {
+      transition: transform 0.5s;
+    }
+  
+    /* Add a hover effect to the button */
+    .button:hover .card {
+      transform: scale(1.2);
+    }
+  </style>
+  
 </head>
 
 <body class="bg-[url('https://images.unsplash.com/photo-1617791160505-6f00504e3519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80')] bg-cover  overflow-hidden" style="">
-<div class="h-screen w-screen backdrop-blur-xl ">  <div class="w-screen h-8 bg-[#ffffff]">
+<div class="h-screen w-screen backdrop-blur-xl ">  <div class="w-screen h-8 border-b-4 border-black bg-[#f8f8f8]">
   <div class="flex flex-col-2">
 <div class="flex flex-cols-6">
-  <h1 style="font-family: 'Assistant', sans-serif;" class="text-black text-xl ml-5">🍎</h1>
-  <h1 style="font-family: 'Assistant', sans-serif;" class=" font-bold text-black text-xl ml-5">Portfolio</h1>
- <a href="index.html"> <h1 style="font-family: 'Assistant', sans-serif;" class="  text-black text-xl ml-5">Home</h1></a>
- <button id="btn1" onclick="toggleCard(1)"> <a href="#">  <h1 style="font-family: 'Assistant', sans-serif;" class="  text-black text-xl ml-5">About</h1></a></button>
- <button id="btn2" onclick="toggleCard(2)"> <a href="#"> <h1 style="font-family: 'Assistant', sans-serif;" class="  text-black text-xl ml-5">Work</h1></a></button>
- <button id="btn3" onclick="toggleCard(3)">    <a href="#">  <h1 style="font-family: 'Assistant', sans-serif;" class="  text-black text-xl ml-5">Contact</h1></a></button>
+  <h1 style="font-family: 'Barlow', sans-serif;" class="text-black text-xl ml-5">🍎</h1>
+  <h1 style="font-family: 'Barlow', sans-serif;" class=" font-bold text-black text-xl ml-5">Portfolio</h1>
+ <a href="index.html"> <h1 style="font-family: 'Barlow', sans-serif;" class="  text-black text-xl ml-5">Home</h1></a>
+ <button id="btn1" onclick="toggleCard(1)"> <a href="#">  <h1 style="font-family: 'Barlow', sans-serif;" class="  text-black text-xl ml-5">About</h1></a></button>
+ <button id="btn2" onclick="toggleCard(2)"> <a href="#"> <h1 style="font-family: 'Barlow', sans-serif;" class="  text-black text-xl ml-5">Work</h1></a></button>
+ <button id="btn3" onclick="toggleCard(3)">    <a href="#">  <h1 style="font-family: 'Barlow', sans-serif;" class="  text-black text-xl ml-5">Contact</h1></a></button>
 </div>
 
-<div class="flex flex-cols-3 absolute right-0 mr-5 " style="font-family: 'Assistant', sans-serif;" >
+<div class="flex flex-cols-3 absolute right-0 mr-5 " style="font-family: 'Barlow', sans-serif;" >
 
   <h1 id="clock" class="  text-black text-xl mr-5"></h1>
 
@@ -28,7 +41,7 @@
 </div>
 <!--<img src="mac folder.png">-->
 
-<div class="grid grid-rows-5 h-screen w-32 absolute right-0 mr-2  mt-2" style="font-family: 'Assistant', sans-serif;">
+<div class="grid grid-rows-5 h-screen w-32 absolute right-0 mr-2  mt-2" style="font-family: 'Barlow', sans-serif;">
   <button id="btn1" onclick="toggleCard(1)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="mac folder.png"><h1 class="text-white font-bold ">About Me</h1></div></button>
   <button id="btn2" onclick="toggleCard(2)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="mac folder.png"><h1 class="text-white font-bold ">My Works</h1></div></button>
   <button id="btn3" onclick="toggleCard(3)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="mac folder.png"><h1 class="text-white font-bold ">Contact</h1></div></button>
@@ -37,7 +50,7 @@
 
 </div>
 <div id="card1" class="card" style="display:none;">
-  <div  class="bg-white h-96 w-96 absolute border-2 border-black rounded-xl top-32 left-6"><div class="h-5 rounded-t-xl ">
+  <div  class="bg-white h-[396px] w-[596px] absolute border-2 border-black rounded-xl top-32 left-6"><div class="h-5 rounded-t-xl ">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
       <button id="btn2" onclick="toggleCard(1)"><div class="h-3 w-3 rounded-full bg-red-500"></div></button></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -46,7 +59,7 @@
           </div>
       </div>
    
-<p class="bg-black  text-white rounded-xl ml-5 mr-5 p-2"  style="font-family: 'Assistant', sans-serif;">Hi there! My name is Aditya Madan and I am a front-end web developer and student. I am currently studying in Grade 11 and have a strong passion for creating visually appealing and user-friendly websites. I have a strong foundation in HTML, CSS, and JavaScript, and am always looking to learn more about new technologies and best practices in web development. In my spare time, I enjoy staying up-to-date with industry trends and participating in coding challenges and hackathons. I am excited to continue my journey as a web developer and can't wait to see what the future holds.</p>
+<p class="text-black rounded-xl ml-5 mr-5 p-2 text-xl"  style="font-family: 'Barlow', sans-serif;">Hi there! My name is Aditya Madan and I am a front-end web developer and student. I am currently studying in Grade 11 and have a strong passion for creating visually appealing and user-friendly websites. I have a strong foundation in HTML, CSS, and JavaScript, and am always looking to learn more about new technologies and best practices in web development. In my spare time, I enjoy staying up-to-date with industry trends and participating in coding challenges and hackathons. I am excited to continue my journey as a web developer and can't wait to see what the future holds.</p>
       </div>
     
 
@@ -54,7 +67,7 @@
 </div>
 
 <div id="card2" class="card" style="display:none;">
-  <div  class="bg-white h-96 w-96 absolute border-2 border-black rounded-xl bottom-5 left-32"><div class="h-5 rounded-t-xl ">
+  <div  class="bg-white h-96 w-[396px] absolute border-2 border-black rounded-xl bottom-52 left-80"><div class="h-5 rounded-t-xl ">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
       <button id="btn2" onclick="toggleCard(2)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -63,12 +76,12 @@
      </div>
 
   </div>
-  <h1 class="flex flex-col items-center justify-center font-bold text-xl"  style="font-family: 'Assistant', sans-serif;">My Works</h1>
+  <h1 class="flex flex-col items-center justify-center font-bold text-xl"  style="font-family: 'Barlow', sans-serif;">My Works</h1>
   <div class="grid grid-rows-4 gap-5">
-   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/nCreate-2022/"><h1 class="flex flex-col items-center justify-center font-bold text-xl mt-2"  style="font-family: 'Assistant', sans-serif;">AMEX EVs</h1></A></div>
-   <div class="bg-red-100   border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/sjkss/"><h1 class="flex flex-col items-center justify-center font-bold text-xl mt-2"  style="font-family: 'Assistant', sans-serif;">SJKSS NGO</h1></A></div>
-   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><a href="https://aditya10801.github.io/pursuit-int/"><h1 class="flex flex-col items-center justify-center font-bold text-xl mt-2"  style="font-family: 'Assistant', sans-serif;">Pursuit-Int School Landing Page</h1></a></div>
-   <div class="bg-red-100 border-2 border-black  rounded-full h-12 w-80 ml-8 mr-8"><a href="https://aditya10801.github.io/mixeo/"><h1 class="flex flex-col items-center justify-center font-bold text-xl mt-2"  style="font-family: 'Assistant', sans-serif;">MIXEO - AI  Outfit Generator</h1></a></div>
+   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/nCreate-2022/"><h1 class="flex flex-col items-center justify-center text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">AMEX EVs</h1></A></div>
+   <div class="bg-red-100   border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/sjkss/"><h1 class="flex flex-col items-center justify-center text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">SJKSS NGO</h1></A></div>
+   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><a href="https://pursuit-int.netlify.app"><h1 class="flex flex-col items-center justify-center  text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">Pursuit-Int School Landing Page</h1></a></div>
+   <div class="bg-red-100 border-2 border-black  rounded-full h-12 w-80 ml-8 mr-8"><a href="https://aditya10801.github.io/mixeo/"><h1 class="flex flex-col items-center justify-center  text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">MIXEO - AI  Outfit Generator</h1></a></div>
 </div>
 </div>
 
@@ -76,7 +89,7 @@
 </div>
 
 <div id="card3" class="card" style="display:none;">
-  <div  class="bg-white h-96 w-96 absolute border-2 border-black rounded-xl top-10 left-80"><div class="h-5 rounded-t-xl ">
+  <div  class="bg-white h-96 w-96 absolute border-2 border-black rounded-xl top-20 left-96"><div class="h-5 rounded-t-xl ">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
       <button id="btn2" onclick="toggleCard(3)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -85,28 +98,53 @@
          
           </div>
           <div class="p-5">
-          <input type="hidden" name="access_key" value="164f0eb8-f7c3-47c8-bd0c-5ea47ea37679" /> 
-      <div class="grid gap-6 sm:grid-cols-2">
-        <div class="relative z-0">
-          <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
-        </div>
-        <div class="relative z-0">
-          <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
-        </div>
-        <div class="relative z-0 col-span-2">
-          <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-          <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
-        </div>
-      </div>
-      <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
-    </form>
+            <form action="https://api.web3forms.com/submit" method="POST" class="mt-10">
+  
+              <input type="hidden" name="apikey" value="164f0eb8-f7c3-47c8-bd0c-5ea47ea37679" /> 
+              <div class="grid gap-6 sm:grid-cols-2">
+                <div class="relative z-0">
+                  <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-black focus:border-white focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-black ">Your name</label>
+                </div>
+                <div class="relative z-0">
+                  <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-black focus:border-white focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-black ">Your email</label>
+                </div>
+                <div class="relative z-0 col-span-2">
+                  <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-black focus:border-white focus:outline-none focus:ring-0" placeholder=" "></textarea>
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-black">Your message</label>
+                </div>
+              </div>
+              <button type="submit" class="mt-5 rounded-md bg-black  border border-2 hover:border-4  hover:border-black hover:text-black hover:bg-white  px-10 py-2 text-white">Send Message</button>
+            </form>
   </div>
       </div>
    
       </div>
     
+    
+
+      </div></div></div>
+</div>
+
+<div id="card4" class="card" style="display:none;">
+  <div  class="bg-white h-96 w-[396px] absolute border-2 border-black rounded-xl bottom-52 left-80"><div class="h-5 rounded-t-xl ">
+    <div class="grid grid-cols-3  w-12 ml-2 mt-2">
+      <button id="btn2" onclick="toggleCard(4)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
+        <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
+          <div class="h-3 w-3 rounded-full bg-green-500"></div>
+
+     </div>
+
+  </div>
+  <h1 class="flex flex-col items-center justify-center font-bold text-xl"  style="font-family: 'Barlow', sans-serif;">My Works</h1>
+  <div class="grid grid-rows-4 gap-5">
+   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/nCreate-2022/"><h1 class="flex flex-col items-center justify-center text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">AMEX EVs</h1></A></div>
+   <div class="bg-red-100   border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><A href="https://aditya10801.github.io/sjkss/"><h1 class="flex flex-col items-center justify-center text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">SJKSS NGO</h1></A></div>
+   <div class="bg-red-100  border-2 border-black rounded-full h-12 w-80 ml-8 mr-8"><a href="https://pursuit-int.netlify.app"><h1 class="flex flex-col items-center justify-center  text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">Pursuit-Int School Landing Page</h1></a></div>
+   <div class="bg-red-100 border-2 border-black  rounded-full h-12 w-80 ml-8 mr-8"><a href="https://aditya10801.github.io/mixeo/"><h1 class="flex flex-col items-center justify-center  text-xl mt-2"  style="font-family: 'Barlow', sans-serif;">MIXEO - AI  Outfit Generator</h1></a></div>
+</div>
+</div>
 
       </div></div></div>
 </div>
@@ -131,7 +169,7 @@
   hour = hour ? hour : 12; // the hour '0' should be '12'
   minute = minute < 10 ? '0' + minute : minute;
   second = second < 10 ? '0' + second : second;
-  var currentTime = dayList[day] + ', ' + monthList[month] + ' ' + date.getDate() + ', ' + year + ' ' + hour + ':' + minute +' ' + ampm;
+  var currentTime = dayList[day] + ', ' + monthList[month] + ' ' + date.getDate() + ', ' + year + ' ' + hour + ':' + minute  +' ' + ampm;
   return currentTime;
 }
 
