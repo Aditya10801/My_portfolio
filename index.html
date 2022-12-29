@@ -41,7 +41,7 @@
 </div>
 <!--<img src="mac folder.png">-->
 
-<div class="grid grid-rows-6 h-screen w-32 absolute right-0 mr-2  mt-2" style="font-family: 'Barlow', sans-serif;" >
+<div class="grid grid-rows-6 h-screen w-32 absolute right-0 mr-2  mt-2" style="font-family: 'Barlow', sans-serif;">
   <button id="btn1" onclick="toggleCard(1)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="https://www.macworld.com/wp-content/uploads/2021/11/folder-icon-macos-1.png?w=1024"><h1 class="text-black  ">About Me</h1></div></button>
   <button id="btn2" onclick="toggleCard(2)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="https://www.macworld.com/wp-content/uploads/2021/11/folder-icon-macos-1.png?w=1024"><h1 class="text-black ">My Works</h1></div></button>
   <button id="btn3" onclick="toggleCard(3)"><div class="h-20 w-20 rounded-xl   ml-6"><img src="https://www.macworld.com/wp-content/uploads/2021/11/folder-icon-macos-1.png?w=1024"><h1 class="text-black  ">Contact</h1></div></button>
@@ -51,7 +51,10 @@
 </div>
 <div id="card1" class="card" style="display:none;">
   <div  class="bg-white h-[396px] w-[596px] absolute border-2 border-black rounded-xl top-32 left-6"><div class="h-5 rounded-t-xl ">
-    <div class="grid grid-cols-3  w-12 ml-2 mt-2">
+    <Div class="border-b-2 p-1  border-black">
+      
+    <div class="grid grid-cols-3  w-12 ml-2 mt-2 ">
+      
       <button id="btn2" onclick="toggleCard(1)"><div class="h-3 w-3 rounded-full bg-red-500"></div></button></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
           <div class="h-3 w-3 rounded-full bg-green-500"></div>
@@ -68,6 +71,7 @@
 
 <div id="card2" class="card" style="display:none;">
   <div  class="bg-white h-96 w-[396px] absolute border-2 border-black rounded-xl bottom-52 left-80"><div class="h-5 rounded-t-xl ">
+    <Div class="border-b-2 p-1  border-black">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
       <button id="btn2" onclick="toggleCard(2)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -90,11 +94,13 @@
 
 <div id="card3" class="card" style="display:none;">
   <div  class="bg-white h-96 w-96 absolute border-2 border-black rounded-xl top-20 left-96"><div class="h-5 rounded-t-xl ">
+    <Div class="border-b-2 p-1  border-black">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
+      
       <button id="btn2" onclick="toggleCard(3)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
           <div class="h-3 w-3 rounded-full bg-green-500"></div>
-
+</div>
          
           </div>
           <div class="p-5">
@@ -128,7 +134,9 @@
 </div>
 
 <div id="card4" class="card" style="display:none;">
+
   <div  class="bg-white h-96 w-[396px] absolute border-2 border-black rounded-xl bottom-52 left-80"><div class="h-5 rounded-t-xl ">
+    <Div class="border-b-2 p-1  border-black">
     <div class="grid grid-cols-3  w-12 ml-2 mt-2">
       <button id="btn2" onclick="toggleCard(4)"> <div class="h-3 w-3 rounded-full bg-red-500"></div></button>
         <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
@@ -191,4 +199,4 @@ setInterval(updateClock, 1000);
 </script>
 <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
     </body>
-    </html>--->
+    </html>
